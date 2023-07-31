@@ -2,17 +2,17 @@
 {
     public class ExceptionsHandling
     {
-        public static void ShowMassiveElement()
+        public static void ShowArrayElement()
         {
-            var massive = new int[] { 8, 7, 1, 4, 2 };
-            Console.WriteLine("Input index of element in massive:");
+            var array = new int[] { 8, 7, 1, 4, 2 };
+            Console.WriteLine("Input index of element in array:");
             var inputedValue = Console.ReadLine();
 
             var elementIndex = inputedValue.Equals(string.Empty) ? null : inputedValue;
             int parsedelementIndex = int.Parse(elementIndex);
-            int elementOfMassiveByIndex = massive[parsedelementIndex];
+            int elementOfarrayByIndex = array[parsedelementIndex];
 
-            Console.WriteLine($"Massive element that has index {inputedValue} has value {elementOfMassiveByIndex}");
+            Console.WriteLine($"Array element that has index {inputedValue} has value {elementOfarrayByIndex}");
         }
     }
 }
